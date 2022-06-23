@@ -1,6 +1,7 @@
 version: "2.4"
 services:
   hivemq:
+    public: true
     # image: hivemq/hivemq-ce:latest
     image: hivemq/hivemq4:latest
     #mem_limit: 800M
