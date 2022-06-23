@@ -2,7 +2,7 @@ version: "2.4"
 services:
   hivemq:
     # image: hivemq/hivemq-ce:latest
-     image: hivemq/hivemq4:latest
+    image: hivemq/hivemq4:latest
     mem_limit: 800M
     mem_reservation: 800M
     ports:
