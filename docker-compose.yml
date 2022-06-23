@@ -3,8 +3,8 @@ services:
   hivemq:
     # image: hivemq/hivemq-ce:latest
     image: hivemq/hivemq4:latest
-    mem_limit: 800M
-    mem_reservation: 800M
+    #mem_limit: 800M
+    #mem_reservation: 800M
     ports:
       - 1883
       - 8080
