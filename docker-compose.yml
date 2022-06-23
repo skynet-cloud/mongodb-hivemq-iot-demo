@@ -19,6 +19,6 @@ services:
       retries: 10
 endpoints:
   - path: /
-    service: frontend
+    service: hivemq
     port: 8080
  
