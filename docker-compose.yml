@@ -6,8 +6,8 @@ services:
     mem_limit: 800M
     mem_reservation: 800M
     ports:
-    - 1883:1883
-    - 8000:8000
+    - 1883
+    - 8080
     environment:
       JAVA_OPTS: "-XX:+UnlockExperimentalVMOptions -XX:InitialRAMPercentage=30 -XX:MaxRAMPercentage=80 -XX:MinRAMPercentage=30"
     # Wait until HiveMQ is completely started
