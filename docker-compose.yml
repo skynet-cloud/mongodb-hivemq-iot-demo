@@ -8,6 +8,7 @@ services:
     ports:
       - 1883
       - 8080
+      - 8000
     environment:
       JAVA_OPTS: "-XX:+UnlockExperimentalVMOptions -XX:InitialRAMPercentage=30 -XX:MaxRAMPercentage=80 -XX:MinRAMPercentage=30"
     # Wait until HiveMQ is completely started
@@ -16,5 +17,8 @@ services:
       interval: 5s
       timeout: 5s
       retries: 10
- 
+ endpoints:
+  - path: /
+    service: frontend
+    port: 8080
  
